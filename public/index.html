@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ngafe Yuk</title>
+  <link rel="icon" href="img/logo.png" type="image/png" >
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- My Style -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">Ngafe<span> Yuk</a>
+
+    <div class="navbar-nav">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#cafes">Rekomendasi</a>
+      <a href="#contact">Kontak</a>
+      <a href="https://drive.google.com/your-file-link" target="_blank">Panduan</a>
+      <span id="auth-section">
+        <a href="login.html" class="login-box">Login</a>
+      </span>
+    </div>
+
+    <div class="navbar-extra">
+      <a href="#" id="search-button"><i data-feather="search"></i></a>
+      <a href="#" id="shopping-cart-button"><i data-feather="heart"></i></a>
+      <a href="#" id="user-icon"><i data-feather="user"></i></a>
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+
+    <!-- Search Form start -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="search here...">
+      <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+    <!-- Search Form end -->
+
+    <!-- Shopping Cart Favorite start -->
+    <div class="shopping-cart">
+      <div id="cart-items"></div>
+    </div>
+    <!-- Shopping Cart Favorite end -->
+
+
+  </nav>
+  <!-- Navbar end -->
+
+  <!-- Hero Section start -->
+  <section class="hero" id="home">
+    <div class="mask-container">
+      <main class="content">
+        <h1>Cari Cafe Bersama Kami!</h1>
+        <p>Temukan cafe favoritmu dengan mudah dan rasakan pengalaman ngopi terbaik</p>
+      </main>
+    </div>
+  </section>
+  <!-- Hero Section end -->
+
+  <!-- About Section start -->
+  <section id="about" class="about">
+    <h2><span>Tentang</span> Kami</h2>
+
+    <div class="row">
+      <div class="about-img">
+        <img src="img/tentang-kami.jpg" alt="Tentang Kami">
+      </div>
+      <div class="content">
+        <h3>Kenapa memilih Ngafe Yuk?</h3>
+        <p>Kami percaya bahwa setiap momen di cafe adalah cerita yang berharga.
+          Kami hadir untuk menghubungkan pecinta cafe dengan tempat-tempat terbaik untuk menikmati kopi, suasana nyaman, dan pengalaman tak terlupakan.
+          Misi kami adalah menjadi panduan utama dalam menemukan kafe yang sesuai dengan kebutuhanmu. Ngafe Yuk adalah teman setia perjalananmu untuk mengeksplorasi dunia kafe, karena kami tahu,
+          ngafe bukan hanya soal minum kopi, tapi juga soal menciptakan kenangan.</p>
+        <p>Ayo, temukan cafe favoritmu bersama kami!</p>
+      </div>
+    </div>
+  </section>
+  <!-- About Section end -->
+
+  <!-- Cafes Section start -->
+  <section class="cafes" id="cafes">
+    <h2><span>Rekomendasi</h2>
+    <div id="notification">
+      <div id="notification-message"></div>
+    </div>
+    <div class="row" id="cafe-list">
+      <!-- Data kafe akan dimuat di sini secara dinamis -->
+    </div>
+  </section>
+  <!-- Cafes Section end -->
+
+  <!-- Contact Section start -->
+  <section id="contact" class="contact">
+    <h2><span>Kontak</span> Kami</h2>
+
+    <div class="row">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63314.62031369207!2d109.21153245950904!3d-7.424967741272267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e656b7527f9954b%3A0x5027a76e356f750!2sPurwokerto%2C%20Banyumas%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1690303139002!5m2!1sen!2sid"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+        <form action="" method="POST">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" name="name" placeholder="Nama" required>
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" name="phone" placeholder="No HP" required>
+          </div>
+          <div class="input-group">
+            <i data-feather="message-circle"></i>
+            <input type="text" name="message" placeholder="Tulis pesan Anda" required>
+          </div>
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+
+
+    </div>
+  </section>
+  <!-- Contact Section end -->
+
+  <!-- Footer start -->
+  <footer>
+    <div class="socials">
+      <a href="https://www.instagram.com/ngafeyuk_pwt/profilecard/?igsh=djd6NXNvNTRnOXFw" target="_blank" rel="noopener noreferrer">
+        <i data-feather="instagram"></i>
+      </a>
+      <a href="https://x.com/NgafeYuk_Pwt" target="_blank" rel="noopener noreferrer">
+        <i data-feather="twitter"></i>
+      </a>
+    </div>
+
+    <div class="credit">
+      <p>Created by <a href="">ngafeyuk</a>. | &copy; 2024.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <!-- Modal Box Item Detail start -->
+<div class="modal" id="item-detail-modal">
+  <div class="modal-container">
+    <a href="#" class="close-icon" id="close-modal"><i data-feather="x"></i></a>
+    <div class="modal-content">
+      <img src="" alt="cafe image" id="modal-cafe-image">
+      <div class="cafe-content">
+        <h3 id="modal-cafe-name"></h3>
+        <p id="modal-cafe-description"></p>
+        <div class="cafe-stars" id="modal-cafe-rating"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Box Item Detail end -->
+
+  <!-- Feather Icons -->
+  <script>
+    feather.replace()
+  </script>
+
+  <!-- My Javascript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
